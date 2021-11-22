@@ -6,7 +6,7 @@
 Escriba el programa Python asociado.
 """
 edad = int(input("Introduzca su edad en años: "))
-if edad>6:
+if edad<6:
     print("No puede jugar en ninguna categoria")
 elif edad == 6 or edad == 7:
     print("Su categoria es benjamin")
