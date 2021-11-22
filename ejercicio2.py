@@ -5,16 +5,16 @@ si = True
 no = False
 def es_gaseoso(temperatura):
     if temperatura>100:
-        return si
+        return si + "es gaseoso"
     else:
-        return no
+        return no + "es liquido"
 def es_liquido(temperatura):
     if temperatura>=0 and temperatura<=100:
-        return si
+        return si + "es liquido"
     else:
-        return no
+        return no + "es liquido"
 def es_solido(temperatura):
     if temperatura<0:
-        return si
+        return si + "es solido"
     else:
-        return no
+        return no + "es solido"
