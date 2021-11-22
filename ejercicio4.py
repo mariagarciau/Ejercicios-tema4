@@ -1,5 +1,5 @@
-"""Escriba un algoritmo que permita saber cuál es el día de la semana, utilizando el siguiente método y después conviértalo a Python:
-
+"""Escriba un algoritmo que permita saber cuál es el día de la semana,
+utilizando el siguiente método y después conviértalo a Python:
 Conserve las dos últimas cifras del año.
 Añada 1/4 de esta cifra, ignorando el resto: división entera.
 Añada el día del mes.
