@@ -34,3 +34,63 @@ Este resto es el día de la semana buscado.
 6 para Viernes
 0 para Sábado
 """
+suma = 0
+mes = input("Introduzca el mes actual")
+bisiesto = bool(input("Introduzca True si el año es bisiesto o False si no lo es"))
+años = int(input("Introduzca un siglo en años"))
+dia_semana : str
+if mes == "Enero":
+    suma +=1
+elif mes == "Febrero":
+    suma +=4
+elif mes == "Marzo":
+    suma +=4
+elif mes == "Abril":
+    suma +=0
+elif mes == "Mayo":
+    suma +=2
+elif mes == "Junio":
+    suma +=5
+elif mes == "Julio":
+    suma +=0
+elif mes == "Agosto":
+    suma +=3
+elif mes == "Septiembre":
+    suma +=6
+elif mes == "Octubre":
+    suma +=1
+elif mes == "Noviembre":
+    suma +=4
+elif mes == "Diciembre":
+    suma +=6
+
+if bisiesto == True and (mes == "Enero" or mes == "Febrero"):
+    suma -=1
+if años == 1600:
+    suma += 6
+elif años == 1700:
+    suma+=4
+elif años == 1800:
+    suma+=2
+elif años == 1900:
+    suma+=0
+elif años == 2000:
+    suma+=6
+elif años == 2100:
+    suma+=4
+
+modulo = suma%7
+if modulo == 1:
+    dia_semana = "Domingo"
+elif modulo == 2:
+    dia_semana = "Lunes"
+elif modulo == 3:
+    dia_semana = "Martes"
+elif modulo == 4:
+    dia_semana = "Miercoles"
+elif modulo == 5:
+    dia_semana = "Jueves"
+elif modulo == 6:
+    dia_semana = "Viernes"
+elif modulo == 0:
+    dia_semana = "Sabado"
