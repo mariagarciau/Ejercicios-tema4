@@ -35,6 +35,8 @@ Este resto es el día de la semana buscado.
 0 para Sábado
 """
 suma = 0
+año = int(input("Introduzca las dos ultimas cifras del año"))
+suma = año//4
 mes = input("Introduzca el mes actual")
 bisiesto = bool(input("Introduzca True si el año es bisiesto o False si no lo es"))
 años = int(input("Introduzca un siglo en años"))
