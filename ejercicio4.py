@@ -35,12 +35,12 @@ Este resto es el día de la semana buscado.
 0 para Sábado
 """
 suma = 0
-año = int(input("Introduzca las dos ultimas cifras del año"))
+año = int(input("Introduzca las dos ultimas cifras del año "))
 suma = año//4
-mes = input("Introduzca el mes actual")
-bisiesto = bool(input("Introduzca True si el año es bisiesto o False si no lo es"))
-años = int(input("Introduzca un siglo en años"))
-dia_semana : str
+mes = input("Introduzca el mes actual ")
+bisiesto = bool(input("Introduzca True si el año es bisiesto o False si no lo es "))
+años = int(input("Introduzca un siglo en años "))
+
 if mes == "Enero":
     suma +=1
 elif mes == "Febrero":
@@ -83,16 +83,16 @@ elif años == 2100:
 
 modulo = suma%7
 if modulo == 1:
-    dia_semana = "Domingo"
+    print("Domingo")
 elif modulo == 2:
-    dia_semana = "Lunes"
+    print("Lunes")
 elif modulo == 3:
-    dia_semana = "Martes"
+    print("Martes")
 elif modulo == 4:
-    dia_semana = "Miercoles"
+    print("Miercoles")
 elif modulo == 5:
-    dia_semana = "Jueves"
+    print("Jueves")
 elif modulo == 6:
-    dia_semana = "Viernes"
+    print("Viernes")
 elif modulo == 0:
-    dia_semana = "Sabado"
+    print("Sabado")
